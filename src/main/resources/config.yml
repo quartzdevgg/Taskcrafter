@@ -1,0 +1,43 @@
+##################################################################
+# +------------------------------------------------------------+ #
+# |                   Taskcrafter Config                       | #
+# |   Source:   https://github.com/QarthO/taskcrafter/         | #
+# |   Download: https://modrinth.com/plugin/taskcrafter/       | #
+# |   Donate:   https://quartzdev.gg/donate/                   | #
+# |   Discord:  https://quartzdev.gg/discord/                  | #
+# +------------------------------------------------------------+ #
+##################################################################
+
+# Default Config
+config-version: 1.0
+
+# Requires '###.admin.updates' permission to be notified
+# OPs can deny this permission to not be notified upon logging in
+# Only checks when the server boots or someone with the permission logs in
+# Note: A server restart is required to change this setting
+# Default: true
+check-updates: true
+
+##################################################################
+# +------------------------------------------------------------+ #
+# |                          Exchange                          | #
+# +------------------------------------------------------------+ #
+##################################################################
+
+exchange:
+  red:
+    a: null
+    b: null
+    c: null
+  blue:
+    a: null
+    b: null
+    c: null
+  yellow:
+    a: null
+    b: null
+    c: null
+  green:
+    a: null
+    b: null
+    c: null
