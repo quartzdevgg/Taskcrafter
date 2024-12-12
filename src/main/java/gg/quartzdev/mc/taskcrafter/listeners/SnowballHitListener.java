@@ -1,5 +1,6 @@
 package gg.quartzdev.mc.taskcrafter.listeners;
 
+import gg.quartzdev.mc.lib.qlibpaper.Sender;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Snowball;
 import org.bukkit.event.EventHandler;
@@ -18,10 +19,8 @@ public class SnowballHitListener implements Listener
     {
 //        only care about snowballs thrown by players that hit players
         if(!(event.getEntity() instanceof Snowball snowball)) return;
-        if(!(event.getHitEntity() instanceof Player player)) return;
-        if(!(snowball.getShooter() instanceof Player)) return;
-
-
+        if(!(event.getHitEntity() instanceof Player target)) return;
+        if(!(snowball.getShooter() instanceof Player shooter)) return;
 
     }
 }

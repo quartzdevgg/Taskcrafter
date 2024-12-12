@@ -1,15 +1,14 @@
-package gg.quartzdev.mc.taskcrafter.commands.taskcrafter;
+package gg.quartzdev.mc.taskcrafter.commands;
 
 
-import gg.quartzdev.mc.taskcrafter.util.QCMD;
+import gg.quartzdev.mc.lib.qlibpaper.commands.QCMD;
 import io.papermc.paper.command.brigadier.CommandSourceStack;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Collection;
 import java.util.List;
 
 @SuppressWarnings("UnstableApiUsage")
-public class CMD extends QCMD
+public class CMDtaskcrafter extends QCMD
 {
     /**
      * Constructor for creating a new command
@@ -22,7 +21,7 @@ public class CMD extends QCMD
      *     <li>requiresPermission: whether the player needs to have the permission to use the command, a player with the permission set to false will still not be able to use the command</li>
      * </ul>
      */
-    public CMD(){
+    public CMDtaskcrafter(){
         super(
                 "taskcrafter",
                 "Basic command for Taskcrafter",
@@ -58,7 +57,7 @@ public class CMD extends QCMD
      * @return a list of suggestions for the player
      */
     @Override
-    public @NotNull Collection<String> suggest(@NotNull CommandSourceStack commandSourceStack, @NotNull String[] args)
+    public @NotNull List<String> tabCompletionLogic(@NotNull CommandSourceStack commandSourceStack, @NotNull String[] args)
     {
         return switch(args.length)
         {
